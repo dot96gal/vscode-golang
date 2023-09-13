@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  vscode-golang:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    platform: linux/x86_64
+    volumes:
+      - ../:/workspace:cached

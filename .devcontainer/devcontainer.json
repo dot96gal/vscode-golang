@@ -1,0 +1,22 @@
+{
+  "name": "vscode-golang",
+  "dockerComposeFile": [
+    "../docker/compose.yml",
+    "./compose.yml"
+  ],
+  "service": "vscode-golang",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "golang.go",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "initializeCommand": "",
+  "postCreateCommand": "git config --system --add safe.directory /workspace"
+}
