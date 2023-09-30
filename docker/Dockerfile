@@ -16,3 +16,4 @@ RUN go mod download
 
 # install go tools
 RUN go install golang.org/x/tools/gopls@latest
+RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.54.2
