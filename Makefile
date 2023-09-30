@@ -4,7 +4,7 @@ lint:
 
 .PHONY: test
 test:
-	go test ./...
+	GOEXPERIMENT=loopvar go test -race ./...
 
 .PHONY: dev
 dev:
