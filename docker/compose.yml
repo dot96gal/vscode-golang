@@ -4,6 +4,6 @@ services:
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
-    platform: linux/x86_64
+    platform: linux/arm64
     volumes:
       - ../:/workspace:cached
